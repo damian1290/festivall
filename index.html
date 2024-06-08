@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій власний сайт</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Стилі для ховер ефектів на фотографіях */
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .photo-container figure {
+            position: relative;
+            margin: 10px;
+        }
+        .photo-container img {
+            width: 450px;
+            height: 350px;
+            transition: transform 0.5s;
+        }
+        .photo-container img:hover {
+            transform: scale(1.1);
+        }
+        .photo-container figcaption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.5s;
+            color: white;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        .photo-container figure:hover figcaption {
+            opacity: 1;
+        }
+        .bio-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .bio {
+            display: inline-block;
+            max-width: 450px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Мій Сайт</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Про мене</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.ua-football.com/" target="_blank" style="color: blue;">UA-Football</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://football24.ua/" target="_blank" style="color: blue;">Футбол 24</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <!-- Цікаві факти про футбол -->
+    <h1>Цікаві факти про футбол</h1>
+    <ul>
+        <li>Футбол - це найпопулярніший спорт у світі.</li>
+        <li>Перший матч за правилами, схожими на сучасні, відбувся в 1863 році в Англії.</li>
+        <li>Футбол включений до програми Олімпійських ігор з 1900 року.</li>
+    </ul>
+
+    <!-- Фотографії з ховер ефектами -->
+    <div class="photo-container">
+        <figure>
+            <img src="https://dynamo.kiev.ua/media/posts/2024/03/12/mudryk11.jpg" alt="Мудрик">
+            <figcaption>Мудрик - відомий український футболіст. Він грає" за "Chelsea" він є лівий вінгер він народився в Червограді 5 січня 2001 року </figcaption>
+        </figure>
+        <figure>
+            <img src="https://dynamo.kiev.ua/media/posts/2023/11/01/shevchenko149.jpg" alt="Шевченко">
+            <figcaption>Андрій Шевченко - великий український футболіст, колишній капітан збірної України та АС "Мілан". Володар "Золотого м'яча" у 2004 році.</figcaption>
+        </figure>
+    </div>
+    <!-- Біографія Андрія Шевченка -->
+    <div class="bio-container">
+        <div class="bio">
+            <p>Андрій Шевченко - легендарний український футболіст, який відомий своєю високою ефективністю та технікою гри. Він здобув безліч нагород і досягнень як у складі збірної команди, так і у клубному футболі.</p>
+        </div>
+    </div>
+</div>
+<h1 style="color:gold; text-align: center;">володарі золотого м'яча</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Ім'я</th>
+        <th>Рік</th>
+        <th>Команда</th>
+      </tr>
+    </thead>
+    <tbody>
+        <td>Андрій Шевченко</td>
+        <td>2004</td>
+        <td>Мілан</td>
+      </tr>
+      <tr>
+        <td>Рональдініо</td>
+        <td>2005</td>
+        <td>Барселона</td>
+      </tr>
+      <tr>
+        <td>Фабіо Каннаваро</td>
+        <td>2006</td>
+        <td>Ювентус</td>
+      </tr>
+      <tr>
+        <td>Кака</td>
+        <td>2007</td>
+        <td>Мілан</td>
+      </tr>
+      <tr>
+        <td>Кріштіану Роналду</td>
+        <td>2008</td>
+        <td>Манчестер Юнайтед</td>
+      </tr>
+      <tr>
+        <td>Ліонель Мессі</td>
+        <td>2009</td>
+        <td>Барселона</td>
+      </tr>
+      <tr>
+        <td>Ліонель Мессі</td>
+        <td>2010</td>
+        <td>Барселона</td>
+      </tr>
+      <tr>
+        <td>Ліонель Мессі</td>
+        <td>2011</td>
+        <td>Барселона</td>
+      </tr>
+      <tr>
+        <td>Ліонель Мессі</td>
+        <td>2012</td>
+        <td>Барселона</td>
+      </tr>
+      <tr>
+        <td>Кріштіану Роналду</td>
+        <td>2013</td>
+        <td>Реал Мадрид</td>
+      </tr>
+      <tr>
+        <td>Кріштіану Роналду</td>
+        <td>2014</td>
+        <td>Реал Мадрид</td>
+      </tr>
+      <tr>
+        <td>Ліонель Мессі</td>
+        <td>2015</td>
+        <td>Барселона</td>
+      </tr>
+      <tr>
+        <td>Кріштіану Роналду</td>
+        <td>2016</td>
+        <td>Реал Мадрид</td>
+      </tr>
+      <tr>
+        <td>Кріштіану Роналду</td>
+        <td>2017</td>
+        <td>Реал Мадрид</td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Лука Модрич</td>
+        <td>2018</td>
+        <td>Реал Мадрид</td>
+      </tr>
+      <tr>
+        <td>Ліонель Месі</td>
+        <td>2019</td>
+        <td>Барселона</td>
+      </tr>
+      <tr>
+        <td>претиндент Роберт Левандовскі</td>
+        <td>2020</td>
+        <td>Баварія</td>
+      </tr>
+      <tr>
+        <td>Ліонель Месі</td>
+        <td>2021</td>
+        <td>ПСЖ</td>
+      </tr>
+      <tr>
+        <td >Карім Бензима </td>
+        <td>2022</td>
+        <td>Реал Мадрид</td>
+      </tr>
+      <tr>
+        <td>Ліонель Месі</td>
+        <td>2023</td>
+        <td>Інтер Маямі</td>
+      </tr>
+    </tbody>
+  </table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
